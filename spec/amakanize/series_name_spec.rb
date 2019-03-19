@@ -90,6 +90,10 @@ RSpec.describe Amakanize::SeriesName do
       "魔法少女育成計画limited（前）" => "魔法少女育成計画limited",
       "ヒナまつり 11<ヒナまつり> (ビームコミックス（ハルタ）)" => "ヒナまつり",
       "ミキの放課後 (ミリオンコミックス)" => "ミキの放課後",
+      " 踏切時間 : 1 (アクションコミックス) " => "踏切時間",
+      " 魔王の始め方 THE COMIC 1 (ヴァルキリーコミックス) " => "魔王の始め方 THE COMIC",
+      " 中卒労働者から始める高校生活 8 " => "中卒労働者から始める高校生活",
+      "Only Sense Online 4　―オンリーセンス・オンライン― Only Sense Online ―オンリーセンス・オンライン― (ドラゴンコミックスエイジ)" => "",
     }.each do |book_name, expected_series_name|
       context "with #{book_name.inspect}" do
         let(:raw) do

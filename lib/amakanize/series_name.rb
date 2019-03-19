@@ -8,6 +8,7 @@ module Amakanize
       # @return [Array<Class>]
       def filter_classes
         @filter_classes ||= [
+          ::Amakanize::Filters::StripFilter,
           ::Amakanize::Filters::HtmlUnescapeFilter,
           ::Amakanize::Filters::NormalizationFilter,
           ::Amakanize::Filters::ContinuousSpacesNormalizationFilter,
